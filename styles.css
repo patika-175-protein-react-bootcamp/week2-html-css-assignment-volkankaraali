@@ -1,0 +1,194 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: #222222;
+}
+
+header {
+  background-image: url("/img/bg-marvel.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 1100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 250px;
+}
+
+header > img {
+  height: 290px;
+}
+
+.container {
+  margin: 30px 300px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 105px 200px;
+}
+
+.card {
+  width: 250px;
+  height: 369px;
+  border: 1px solid #f2f2f2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: #ffff;
+}
+.card > div {
+  position: relative;
+  top: -52px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 15px;
+}
+.card > p {
+  position: relative;
+
+  bottom: 35px;
+
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pagination {
+  color: #7e7e7e;
+  margin-top: 50px;
+  margin-bottom: 300px;
+  display: flex;
+  justify-content: end;
+}
+
+.pagination-container {
+  cursor: pointer;
+  width: 550px;
+  margin-right: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.currentPage {
+  background-color: #7e7e7e;
+  color: black;
+  font-weight: bold;
+  border-radius: 15px;
+  padding: 4px 10px;
+}
+
+.pagination-container > button {
+  border: none;
+  color: #7e7e7e;
+  background-color: transparent;
+}
+
+/* media queries start */
+
+/* leptop 1440px */
+@media only screen and (max-width: 1440px) {
+  header {
+    height: 860px;
+  }
+
+  .container {
+    margin: 30px 50px;
+  }
+}
+
+/* laptop 1024px */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  header {
+    height: 600px;
+  }
+  header > img {
+    height: 180px;
+  }
+  .container {
+    margin: 30px 50px;
+  }
+}
+
+/* tablet 768px */
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    height: 430px;
+    margin-bottom: 150px;
+  }
+  header > img {
+    height: 110px;
+    width: 250px;
+  }
+  .container {
+    margin: 30px 50px;
+  }
+}
+
+/* mobil l 425px */
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+  header {
+    height: 230px;
+    margin-bottom: 150px;
+  }
+  header > img {
+    height: 60px;
+    width: 150px;
+  }
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* mobil m 375px */
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  header {
+    height: 210px;
+    margin-bottom: 100px;
+  }
+  header > img {
+    height: 60px;
+    width: 130px;
+  }
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* mobil s 320px */
+@media only screen and (max-width: 320px) {
+  header {
+    height: 200px;
+    margin-bottom: 100px;
+  }
+  header > img {
+    height: 70px;
+    width: 120px;
+  }
+
+  .container {
+    margin: 30px 25px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
+}
+
+/* media queries end */
