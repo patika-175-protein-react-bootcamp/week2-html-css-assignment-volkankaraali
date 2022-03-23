@@ -27,14 +27,14 @@ header > img {
 }
 
 .container {
-  margin: 30px 300px;
+  margin: 30px 105px;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 105px 200px;
+  gap: 105px 115px;
 }
 
 .card {
@@ -75,7 +75,7 @@ header > img {
 .pagination-container {
   cursor: pointer;
   width: 550px;
-  margin-right: 70px;
+  margin-right: 175px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -97,14 +97,24 @@ header > img {
 
 /* media queries start */
 
+/*does not support above 1920px */
+
 /* leptop 1440px */
-@media only screen and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
   header {
     height: 860px;
   }
 
   .container {
     margin: 30px 50px;
+  }
+
+  .cards {
+    gap: 105px 85px;
+  }
+
+  .pagination-container {
+    margin-right: 50px;
   }
 }
 
@@ -119,6 +129,13 @@ header > img {
   .container {
     margin: 30px 50px;
   }
+
+  .cards {
+    gap: 105px 85px;
+  }
+  .pagination-container {
+    margin-right: 0px;
+  }
 }
 
 /* tablet 768px */
@@ -132,7 +149,14 @@ header > img {
     width: 250px;
   }
   .container {
-    margin: 30px 50px;
+    margin: 30px 0px;
+  }
+  .cards {
+    gap: 120px 8px;
+  }
+  .pagination-container {
+    width: 100%;
+    margin: 0px 50px;
   }
 }
 
