@@ -11,10 +11,10 @@ body {
 }
 
 header {
-  background-image: url("/img/bg-marvel.jpg");
+  background-image: url("/img/bg-marvel copy.png");
   background-size: 100%;
   background-repeat: no-repeat;
-  height: 1100px;
+  height: 1000px;
 
   display: flex;
   justify-content: center;
@@ -102,7 +102,7 @@ header > img {
 /* leptop 1440px */
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   header {
-    height: 860px;
+    height: 800px;
   }
 
   .container {
@@ -121,7 +121,7 @@ header > img {
 /* laptop 1024px */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   header {
-    height: 600px;
+    height: 550px;
   }
   header > img {
     height: 180px;
@@ -141,7 +141,7 @@ header > img {
 /* tablet 768px */
 @media only screen and (min-width: 426px) and (max-width: 768px) {
   header {
-    height: 430px;
+    height: 390px;
     margin-bottom: 150px;
   }
   header > img {
@@ -163,7 +163,7 @@ header > img {
 /* mobil l 425px */
 @media only screen and (min-width: 376px) and (max-width: 425px) {
   header {
-    height: 230px;
+    height: 220px;
     margin-bottom: 150px;
   }
   header > img {
@@ -181,7 +181,7 @@ header > img {
 /* mobil m 375px */
 @media only screen and (min-width: 321px) and (max-width: 375px) {
   header {
-    height: 210px;
+    height: 200px;
     margin-bottom: 100px;
   }
   header > img {
@@ -199,7 +199,7 @@ header > img {
 /* mobil s 320px */
 @media only screen and (max-width: 320px) {
   header {
-    height: 200px;
+    height: 190px;
     margin-bottom: 100px;
   }
   header > img {
